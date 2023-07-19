@@ -87,7 +87,7 @@ button {
 .pro_info {
     /* height: 50px; */
     padding: 10px 15px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .pro_info>p {
