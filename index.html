@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Filter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <header class="container-fluid header">
+        <div class="container header-container">
+            <div class="logo">
+                Fashion
+            </div>
+            <button onclick="openFilter()">Filter</button>
+        </div>
+    </header>
+
+
+
+
+    <!-- Filter Box -->
+    <div class="filter-box" id="filter-box">
+        <div class="filter-pro">
+            <h2>Filters</h2>
+            <div class="inp">
+                <label> Search Product Name</label>
+                <input type="text" placeholder="Enter your Product"
+                    onkeyup="setFilter('product_name',this.value),filterData()">
+            </div>
+
+            <div class="inp">
+                <label> Select Category</label>
+                <select onchange=" setFilter('category',this.value), filterData()">
+                    <option> Select Category</option>
+                    <option>Formal Shirt</option>
+                    <option>T-Shirt</option>
+                    <option>Jeans</option>
+                    <option>Shorts</option>
+                </select>
+            </div>
+
+            <div class="inp">
+                <label>Enter Min & Max Price</label>
+                <div class="minMaxPrice">
+                    <div>
+                        Min Price
+                        <input type="number" onkeyup="setFliter('minPrice',this.value), filterData()">
+                    </div>
+                    <div>
+                        Max Price
+                        <input type="number" onkeyup="setFliter('maxPrice',this.value), filterData()">
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="openFilter()">Filter</button>
+        </div>
+    </div>
+
+
+    <!-- Product Section  -->
+    <section class="container-fluid product">
+        <div class="container pro-container" id="data">
+            <!-- <div class="item">
+                <div class="pro-img">
+
+                    <img src="./image/img1.webp">
+
+                </div>
+                <div class="pro-info">
+                    <h3>Men Slim Fit Striped... </h3>
+                    <b>₹ 399</b> <strike> ₹ 1,899</strike>
+
+                    <div class="discount">
+                        78% off
+                        <h4> Hot Deal</h4>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
