@@ -55,7 +55,7 @@ button {
 
 .pro-container {
     /* background-color: yellow; */
-    padding: 20px 0px;
+    padding: 15px 0px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 8%;
@@ -72,7 +72,7 @@ button {
 
 .pro_pic {
     height: 300px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -86,20 +86,20 @@ button {
 
 .pro_info {
     /* height: 50px; */
-    padding: 10px 20px;
+    padding: 10px 15px;
     /* box-sizing: border-box; */
 }
 
 .pro_info>p {
     font-size: 19px;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .pro_info>b {
     font-size: 15px;
     color: hsl(0, 2%, 19%); 
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 
